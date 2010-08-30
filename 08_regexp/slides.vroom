@@ -1,0 +1,273 @@
+---- config
+title: Corso Introduttivo a Perl - Espressioni Regolari
+height: 24
+width: 80
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /foo/;
+---- center
+Se usate Perl 5.10 potete usare 
+un debugger e tracer integrato nel
+modulo Regexp::Grammars
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /<debug: match> foo/x;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /<debug: match> foo/x;
+
+# Il modificatore 'x' alla fine della
+# espressione regolare indica che i caratteri
+# "blank" verranno ignorati
+---- center
+Ci fosse solo questo, 
+le espressioni regolari
+non sarebbero molto utili
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /<debug: match> f.o/x;
+
+# Il carattere 'punto' (".")
+# rappresenta qualunque carattere
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /<debug: match> f.o/x;
+
+# Il carattere 'punto' (".")
+# rappresenta qualunque carattere
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar goo baz";
+say "OK!" if $text =~ /<debug: match> [fg]oo/x;
+
+# Un insieme di caratteri tra [ ]
+# indica qualunque carattere appartenga 
+# all'insieme
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar goo baz";
+say "OK!" if $text =~ /<debug: match> [a-z]oo/x;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar goo baz";
+say "OK!" if $text =~ /<debug: match> \woo/x;
+
+# Una maniera alternativa per scriverlo
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar goo baz";
+say "OK!" if $text =~ /<debug: match> [^a-z]oo/x;
+
+# Il carattere ^ all'inizio di un gruppo [ ]
+# indica una negazione
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar 1oo baz";
+say "OK!" if $text =~ /<debug: match> [0-9]oo/x;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar 1oo baz";
+say "OK!" if $text =~ /<debug: match> \doo/x;
+---- perl, i10
+# \w  Un carattere alfanumerico (piu` '_')
+# \W  Un carattere NON alfanumerico
+# \d  Una cifra
+# \D  Un carattere che NON rappresenta una cifra
+# \s  Uno spazio
+# \S  Un carattere che NON e` uno spazio
+---- center
+Quantificatori
+---- perl, i10
+# *      Il carattere precedente, 0 o piu` volte
+# +      Il carattere precedente, 1 o piu` volte
+# ?      Il carattere precedente, 0 o 1 volta
+# {n,m}  Il carattere precedente, da n a m volte
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar 1oo baz";
+say "OK!" if $text =~ /<debug: match> \d\w*/x;
+---- center
+Alternative
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /<debug: match> (f|g|h)oo/x;
+---- center
+Capturing
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Regexp::Grammars;
+
+my $text = "bar foo baz";
+say "OK!" if $text =~ /<debug: match> (\w)oo/x;
+---- perl, i10
+use strict;
+use warnings;
+
+my $text = "bar foo baz";
+if ($text =~ /(\w)oo/x) {
+    print $1;
+}
+
+# Il valore "catturato" e` contenuto
+# in $1, e successive
+---- perl, i10
+use strict;
+use warnings;
+
+my $text = "bar foo baz";
+if ($text =~ /(?<initial>\w)oo/x) {
+    print $+{ initial };
+}
+
+# Dalla versione 5.10, esistono
+# anche i named capture
+---- center
+Caratteri speciali
+---- perl, i10
+# ^  L'inizio di una stringa
+# $  La fine di una stringa
+---- perl, i10
+use strict;
+use warnings;
+
+my $text = "bar foo baz";
+if ($text =~ /^(?<initial>\w)oo$/) {
+    print $+{ initial };
+}
+
+# Dalla versione 5.10, esistono
+# anche i named capture
+---- center
+Altri usi utili delle espressioni regolari
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $text = "tizio,caio,sempronio";
+my @nomi = split /,/, $text;
+
+say "@nomi";
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $text = "stefano";
+$text =~ s/s/S/;
+
+say $text;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $text = "stefano";
+$text =~ s/^\w/uc($&)/e;
+
+say $text;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $text = "stefano rodighiero";
+$text =~ s/\b\w/uc($&)/e;
+
+say $text;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $text = "stefano rodighiero";
+$text =~ s/\b\w/uc($&)/eg;
+
+say $text;
+---- center
+Quando NON usare una espressione regolare?
+---- center
+Parsing di formati
+---- center
+CSV -> Text::CSV_XS
+---- center
+URL -> URI
+---- center
+XML -> XML::Simple, XML::Twig, XML::XPath
+---- center
+HTML -> HTML::TokeParser::Simple
+---- perl, i10
+use strict; 
+use warnings; 
+use feature 'say'; 
+use HTML::TokeParser::Simple; 
+
+my $parser = HTML::TokeParser::Simple->new( \*DATA );
+
+while ( my $token = $parser->get_token ) { 
+    next unless $token->is_tag('img'); 
+    my $src = $token->get_attr('src'); 
+    say "Trovata immagine: $src"; 
+} 
+
+__DATA__
+<img src="picture.png" />

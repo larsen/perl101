@@ -1,0 +1,153 @@
+---- config
+title: Corso Introduttivo a Perl - Controllo del flusso 
+height: 24
+width: 80
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $eta = 33;
+if ( $eta > 18 ) {
+    say "Ok";
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $eta             = 15;
+my $documento_falso = 0;
+if ( $eta > 18 || $documento_falso ) {
+    say "Ok";
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $eta             = 15;
+my $documento_falso = 0;
+if ( $eta > 18 || $documento_falso ) {
+    say "Ok";
+}
+
+# Per gli operatori logici vale la 
+# "short-circuit evaluation"
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+if ( foo() ) {
+    say "Ok";
+}
+
+# L'espressione puo` essere qualunque cosa
+# possa produrre un valore vero o falso
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+if ( @array ) {
+    say "Ok";
+}
+
+# L'espressione puo` essere qualunque cosa
+# possa produrre un valore vero o falso
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+if ( %hash ) {
+    say "Ok";
+}
+
+# L'espressione puo` essere qualunque cosa
+# possa produrre un valore vero o falso
+---- perl, i5
+use strict;
+use warnings;
+use feature qw/ say switch /;
+
+my $eta = 33;
+
+given ( $eta ) {
+    when ( 18 )         { say "Sei appena maggiorenne" }
+    when ( $_ > 18 )    { say "Sei maggiorenne"; continue }
+    when ( $_ >= 21 )   
+        { say "In America potresti ordinare alcolici"; continue } 
+    when ( [30 .. 39] ) { say "Sei negli 'enta" }
+};
+---- perl, i5
+use strict;
+use warnings;
+use feature qw/ say switch /;
+
+my $eta = 33;
+
+given ( $eta ) {
+    when ( 18 )         { say "Sei appena maggiorenne" }
+    when ( $_ > 18 )    { say "Sei maggiorenne"; continue }
+    when ( $_ >= 21 )   
+        { say "In America potresti ordinare alcolici"; continue } 
+    when ( [30 .. 39] ) { say "Sei negli 'enta" }
+    default             { say "Niente da dire" }
+};
+---- center
+Se volete saperne di piu`,
+consultate la documentazione
+di ~~ (l'operatore di smart match)
+---- center
+for / foreach
+Modificatori di statement
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+foreach ( 1 .. 10 ) {
+    say;
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @array = qw/ foo bar baz /;
+foreach ( @array ) {
+    say;
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @array = qw/ foo bar baz /;
+foreach my $item ( @array ) {
+    say $item;
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @array = qw/ foo bar baz /;
+foreach my $item ( @array ) {
+    next unless $item =~ /^b/;
+    say $item;
+}
+---- center
+while
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $counter = 0;
+while ( $counter < 10 ) {
+    $counter++
+    say "Siamo in $counter!";
+}

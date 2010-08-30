@@ -1,0 +1,85 @@
+---- config
+title: Corso Introduttivo a Perl - Moduli
+height: 24
+width: 80
+---- perl, i5
+use strict;
+use warnings;
+use feature 'say';
+
+package Foo;
+
+sub saluta {
+    say "Ciao!";
+}
+
+package main;
+
+saluta();
+---- perl, i5
+use strict;
+use warnings;
+use feature 'say';
+
+package Foo;
+
+sub saluta {
+    say "Ciao!";
+}
+
+package main;
+
+Foo::saluta();
+---- perl, i5
+use strict;
+use warnings;
+use feature 'say';
+
+package Foo;
+
+my $x = 10;
+sub saluta {
+    say "Ciao!";
+}
+
+package main;
+
+Foo::saluta();
+say $x;
+---- perl, i5
+use strict;
+use warnings;
+use feature 'say';
+
+package Foo;
+use vars qw/ $x /;
+
+$x = 10;
+sub saluta {
+    say "Ciao!";
+}
+
+package main;
+
+Foo::saluta();
+say $x;
+---- perl, i5
+use strict;
+use warnings;
+use feature 'say';
+
+package Foo;
+use vars qw/ $x /;
+
+$x = 10;
+sub saluta {
+    say "Ciao!";
+}
+
+package main;
+
+Foo::saluta();
+say $Foo::x;
+---- center
+Proviamo a scrivere un package
+piu` complesso

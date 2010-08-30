@@ -1,0 +1,209 @@
+---- config
+title: Corso Introduttivo a Perl - Valori e variabili Scalari
+height: 24
+width: 80
+---- perl, i10
+use strict;
+use warnings;
+
+my $numero = 10;
+print $numero;
+---- perl, i10
+use strict;
+use warnings;
+
+# Non dovete preoccuparvi del trattamento
+# in intero o in virgola mobile
+my $numero = 10;
+my $numero_decimale = 3.14;
+---- perl, i10
+use strict;
+use warnings;
+
+# Un po' di sintassi utili...
+my $milione = 1_000_000;
+---- perl, i10
+use strict;
+use warnings;
+
+# Un po' di sintassi utili... 
+my $esadecimale = 0xDEADBEEF;
+my $ottale      = 0210;
+my $binario     = 0b0101101;
+
+print "$esadecimale\n";
+print "$ottale\n";
+print "$binario\n";
+---- perl, i10
+use strict;
+use warnings;
+
+# Un po' di sintassi utili... 
+use feature 'say';
+
+my $esadecimale = 0xDEADBEEF;
+my $ottale      = 0210;
+my $binario     = 0b0101101;
+
+say "$esadecimale";
+say "$ottale";
+say "$binario";
+---- perl, i10
+use strict;
+use warnings;
+
+# Le operazioni aritmetiche sono le solite. 
+# Vediamo invece gli operatori piu` particolari
+
+$a % $b; # Resto
+$a ** $b; # Esponente
+---- center
+LE STRINGHE
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $str = 'Ciao, Mondo!';
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my $str = 'anche
+su
+piu`
+righe';
+
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Per usare caratteri speciali 
+# dobbiamo usare gli apici doppi
+
+my $str = "Testo con\ttabulazioni";
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Il back-slash serve anche per "quotare"
+# caratteri speciali
+
+my $str = 'L\'amo alla follia';
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Ma e` scomodo
+
+my $str = "L'amo alla follia";
+say $str;
+---- perl, i10
+use feature 'say';
+
+# Ma continua ad essere scomodo
+
+my $str = "L'amo alla follia ma lei ha detto \"Non se ne parla\"";
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# C'e` piu` di un modo per 
+# delimitare le stringhe
+
+my $str = q{L'amo alla follia ma lei ha detto "Non se ne parla"};
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Le doppie virgolette servono anche per 
+# la cosidetta "interpolazione"
+
+my $nome = 'Angela';
+my $str = "L'amo alla follia ma $nome ha detto \"Non se ne parla\"";
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# La versione "comoda" si scrive qq{}.
+# Per ricordarlo:
+# q{}  -> quote
+# qq{} -> double-quote
+
+my $nome = 'Angela';
+my $str = qq{L'amo alla follia ma $nome ha detto "Non se ne parla"};
+say $str;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Un po' di operatori utili per le stringhe
+# Concatenazione
+
+my $nome = 'Angela';
+my $cognome = 'Rossi';
+my $nome_completo = $nome . " " . $cognome;
+say $nome_completo;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Un po' di operatori utili per le stringhe
+# Ripetizione
+
+my $bla = 'Bla';
+my $blaterare = $bla x 5;
+say $blaterare;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Un po' di operatori utili per le stringhe
+# Operatori di confronto
+# (i confronti di questo tipo sono sempre 
+# lessicografici!)
+
+$str1 lt $str2; # minore 
+$str1 gt $str2; # maggiore 
+$str1 le $str2; # minore o uguale 
+$str1 ge $str2; # maggiore o uguale 
+$str1 eq $str2; # uguale 
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Si tratta sempre di scalari, Perl 
+# cerca sempre di fare la cosa giusta
+
+my $numero  = 10; 
+my $stringa = '5';
+say $numero + $stringa;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Funzioni utili per le stringhe
+
+my $name = 'stefano';
+say ucfirst $name;
+---- center
+...back...

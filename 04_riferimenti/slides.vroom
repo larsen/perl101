@@ -1,0 +1,217 @@
+---- config
+title: Corso Introduttivo a Perl - Hash
+height: 24
+width: 80
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# E` esattamente equivalente a questo
+
+my @array = (1, 2, 3, 4, 5, 6);
+say $array[1];
+
+# Come si fa allora un array di array?
+# Lo vediamo piu` tardi...
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @array = ([1, 2, 3], [4, 5, 6]);
+say $array[1];
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @array = ([1, 2, 3], [4, 5, 6]);
+say "@array";
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my @array = ([1, 2, 3], [4, 5, 6]);
+say Dumper( @array );
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my @array = ([1, 2, 3], [4, 5, 6]);
+say $array[0]->[1];
+
+# Per fare riferimento ai singoli elementi
+# si usa l'operatore "->" (arrow)
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Per gli hash abbiamo lo stesso problema
+
+my @persone = (
+    ( nome => "Stefano", cognome => "Rodighiero" ),
+    ( nome => "Mario",   cognome => "Rossi" )
+);
+
+# Non si puo`!
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @persone = (
+    { nome => "Stefano", cognome => "Rodighiero" },
+    { nome => "Mario",   cognome => "Rossi" }
+);
+
+# Occhio alle graffe!
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my @persone = (
+    { nome => "Stefano", cognome => "Rodighiero" },
+    { nome => "Mario",   cognome => "Rossi" }
+);
+
+say Dumper( @persone );
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my @persone = (
+    { nome => "Stefano", cognome => "Rodighiero" },
+    { nome => "Mario",   cognome => "Rossi" }
+);
+
+say $persone[0]->{ nome };
+---- center
+Questa e` la prima e fondamentale 
+tecnica per manipolare strutture
+dati in Perl
+---- center
+Negli esempi presentati abbiamo usato
+riferimenti ad array e hash _anonimi_
+---- center
+A volte pero` e` utile costruire 
+riferimenti a variabili che un nome
+lo hanno...
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my @famiglia = ...
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my @famiglia = \%padre, \%figlio;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my @famiglia;
+push @famiglia, \%padre;
+push @famiglia, \%figlio;
+
+# Una variante, tanto per ripassare le tecniche 
+# gia` viste precedentemente
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my @famiglia;
+push @famiglia, \%padre;
+push @famiglia, \%figlio;
+say Dumper( @famiglia );
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my @famiglia;
+push @famiglia, \%padre;
+push @famiglia, \%figlio;
+say Dumper( \@famiglia );
+
+# Usare Dumper() con i riferimenti migliora la 
+# leggibilita` dell'output
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my %famiglia = (
+    padre  => ... ,
+    figlio => ... 
+);
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my %famiglia = (
+    padre  => \%padre,
+    figlio => \%figlio 
+);
+
+say Dumper( \%famiglia );
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+use Data::Dumper;
+
+my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
+my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+
+my %famiglia = (
+    padre  => \%padre,
+    figlio => \%figlio 
+);
+
+say $famiglia{ padre }->{ nome };
+---- center
+back...
