@@ -1,0 +1,46 @@
+---- config
+title: Corso Introduttivo a Perl - OOP
+vim: gvim
+gvimrc: |
+  set guifont="Menlo Regular:h22.00"
+  set guioptions-=egmLtT
+  set lines=25 columns=80
+  set nonumber
+  colorscheme borland
+----
+* Una classe è un package
+* Un metodo è una subroutine
+* Un oggetto è un riferimento "blessed"
+----
+== Tecnica classica
+---- perl, i10
+package Persona;
+
+sub new {
+	my $class = shift;
+	my $self = {};
+	return bless $self, $class;
+}
+
+sub nome {
+	my $self = shift;
+	if (@_) { $self->{ nome } = shift };
+	return $self->{ nome };
+}
+
+package main;
+my $guy = Persona->new;
+$guy->nome( "Stefano" );
+print $guy->nome;
+---- perl, i10
+package Persona;
+use Moose;
+
+has 'nome' => (
+	is => 'rw'
+);
+
+package main;
+my $guy = Persona->new;
+$guy->nome( "Stefano" );
+print $guy->nome;
