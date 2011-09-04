@@ -148,6 +148,27 @@ use feature 'say';
 
 my $counter = 0;
 while ( $counter < 10 ) {
-    $counter++
+    $counter++;
     say "Siamo in $counter!";
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @interi = (1, 2, 3, 4);
+
+my @quadrati = map {$_ * $_} @interi;
+
+say "@quadrati";
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my @array = qw/ foo bar baz /;
+my @bs = grep { /^b/ } @array;
+
+foreach my $item ( @bs ) {
+    say $item;
 }
