@@ -2,6 +2,11 @@
 title: Corso Introduttivo a Perl - Subroutine
 height: 24
 width: 80
+vim: gvim
+gvimrc: |
+  set guioptions-=egmLtT
+  set nonumber
+  colorscheme borland
 ---- perl, i10
 use strict;
 use warnings;

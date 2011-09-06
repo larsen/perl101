@@ -2,6 +2,11 @@
 title: Corso Introduttivo a Perl - Moduli
 height: 24
 width: 80
+vim: gvim
+gvimrc: |
+  set guioptions-=egmLtT
+  set nonumber
+  colorscheme borland
 ---- perl, i5
 use strict;
 use warnings;

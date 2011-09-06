@@ -1,10 +1,10 @@
 ---- config
 title: Corso Introduttivo a Perl - OOP
+height: 24
+width: 80
 vim: gvim
 gvimrc: |
-  set guifont="Menlo Regular:h22.00"
   set guioptions-=egmLtT
-  set lines=25 columns=80
   set nonumber
   colorscheme borland
 ----
