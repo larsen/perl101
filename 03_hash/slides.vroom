@@ -82,14 +82,6 @@ my %hash = ( 'nome', 'Pinco', 'cognome' , 'Pallino' );
 # Il fatto che il valore da assegnare ad un
 # hash sia una lista (purche` con un numero 
 # pari di elementi) tornera` comodo...
----- perl, i10
-use strict;
-use warnings;
-use feature 'say';
-
-say "%hash";
-
-# Notate quale e` il valore di una hash
 ---- center
 Funzioni utili per
 la manipolazione
