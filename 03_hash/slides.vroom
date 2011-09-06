@@ -112,7 +112,7 @@ my %hash = (
 
 say values %hash;
 
-# values() restituisce la lista dei valoriin %h, 
+# values() restituisce la lista dei valori in %h, 
 # nell'ordine corrispondente a quello fornito
 # da keys()
 ---- perl, i10
