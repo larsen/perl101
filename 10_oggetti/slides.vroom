@@ -44,3 +44,133 @@ package main;
 my $guy = Persona->new;
 $guy->nome( "Stefano" );
 print $guy->nome;
+---- perl, i10
+package Persona;
+use Moose;
+
+has 'nome' => (
+	is       => 'rw',
+	required => 1
+);
+
+package main;
+my $guy = Persona->new;
+$guy->nome( "Stefano" );
+print $guy->nome;
+---- perl, i10
+package Persona;
+use Moose;
+
+has 'nome' => (
+	is       => 'ro', # read-only
+	required => 1
+);
+
+package main;
+my $guy = Persona->new( nome => 'Stefano' );
+print $guy->nome;
+---- perl, i10
+package Persona;
+use Moose;
+
+has 'nome' => (
+	is       => 'ro', # read-only
+	required => 1
+);
+
+package Impiegato;
+use Moose;
+extends 'Persona';
+
+has 'title' => (
+    is      => 'rw',
+    default => 'Mozzo'
+);
+
+package main;
+my $guy = Impiegato->new( nome => 'Stefano' );
+print $guy->nome;
+---- perl, i10
+package Persona;
+use Moose;
+
+has 'nome' => (
+	is       => 'ro', # read-only
+	required => 1
+);
+
+package Impiegato;
+use Moose;
+extends 'Persona';
+
+has 'title' => (
+    is      => 'rw',
+    default => 'Mozzo'
+);
+
+override 'nome' => sub {
+    my $self = shift;
+    return super() . ", " . $self->title;
+};
+
+package main;
+my $guy = Impiegato->new( nome => 'Stefano' );
+print $guy->nome;
+---- perl, i10
+use feature 'say';
+package Persona;
+use Moose;
+
+has 'nome' => (
+	is       => 'ro', # read-only
+	required => 1
+);
+
+sub full_name {
+	my $self = shift;
+
+	return $self->nome;
+}
+
+package Impiegato;
+use Moose;
+use Moose::Util::TypeConstraints;
+extends 'Persona';
+
+enum 'Titolo', [ qw/ Impiegato
+                     Direttore
+                     Megadirettore
+                   / ];
+
+has 'titolo' => (
+	is       => 'rw',
+	isa      => 'Titolo',
+	required => 1
+);
+
+override 'full_name' => sub {
+	my $self = shift;
+	return super() . ", ", $self->titolo;
+};
+
+package Azienda;
+use Moose;
+
+has 'impiegati' => (
+    is  => 'rw',
+    isa => 'ArrayRef[Impiegato]'
+);
+
+package main;
+my $guy = Impiegato->new( 
+    nome   => 'Stefano',
+    titolo => 'Impiegato'
+);
+my $director = Impiegato->new( 
+    nome => 'Paperon de Paperoni',
+    titolo => 'Megadirettore'
+);
+my $azienda = Azienda->new( impiegati => [ $director, $guy ] );
+foreach my $e ( @{ $azienda->impiegati } ) {
+	say $e->full_name;
+}
