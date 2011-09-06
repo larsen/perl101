@@ -48,7 +48,7 @@ if ( foo() ) {
     say "Ok";
 }
 
-# L'espressione puo` essere qualunque cosa
+# L'espressione può essere qualunque cosa
 # possa produrre un valore vero o falso
 ---- perl, i10
 use strict;
@@ -59,7 +59,7 @@ if ( @array ) {
     say "Ok";
 }
 
-# L'espressione puo` essere qualunque cosa
+# L'espressione può essere qualunque cosa
 # possa produrre un valore vero o falso
 ---- perl, i10
 use strict;
@@ -70,7 +70,7 @@ if ( %hash ) {
     say "Ok";
 }
 
-# L'espressione puo` essere qualunque cosa
+# L'espressione può essere qualunque cosa
 # possa produrre un valore vero o falso
 ---- perl, i5
 use strict;
@@ -102,7 +102,7 @@ given ( $eta ) {
     default             { say "Niente da dire" }
 };
 ---- center
-Se volete saperne di piu`,
+Se volete saperne di più,
 consultate la documentazione
 di ~~ (l'operatore di smart match)
 ---- center

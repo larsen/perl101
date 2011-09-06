@@ -42,7 +42,7 @@ my %hash = (
     cognome => 'Pallino' 
 );
 
-# Allo stesso modo, si puo` usare 
+# Allo stesso modo, si può usare 
 # questa sintassi per modificare 
 # la hash, oppure aggiungere nuove 
 # coppie chiave-valore
@@ -60,7 +60,7 @@ my %hash = (
 );
 
 # L'uso di '=>' per definire una hash
-# e` cosiddetto "zucchero sintattico",
+# è cosiddetto "zucchero sintattico",
 ---- perl, i10
 use strict;
 use warnings;
@@ -80,8 +80,8 @@ use feature 'say';
 my %hash = ( 'nome', 'Pinco', 'cognome' , 'Pallino' );
 
 # Il fatto che il valore da assegnare ad un
-# hash sia una lista (purche` con un numero 
-# pari di elementi) tornera` comodo...
+# hash sia una lista (purchè con un numero 
+# pari di elementi) tornerà comodo...
 ---- center
 Funzioni utili per
 la manipolazione
@@ -145,7 +145,7 @@ say defined $hash{ nome }    ? "OK" : "Not OK";
 say defined $hash{ altezza } ? "OK" : "Not OK";
 
 # defined() restituisce un valore vero se il valore
-# corrispondente a quella chiave e` definito
+# corrispondente a quella chiave è definito
 ---- perl, i2
 use strict;
 use warnings;
@@ -159,11 +159,11 @@ my %hash = (
 
 say "Esiste 'nome'?         ", exists $hash{ nome }     ? "OK" : "Not OK";
 say "Esiste 'altezza'?      ", exists $hash{ altezza }  ? "OK" : "Not OK";
-say "E` definito 'nome'?    ", defined $hash{ nome }    ? "OK" : "Not OK";
-say "E` definito 'altezza'? ", defined $hash{ altezza } ? "OK" : "Not OK";
+say "É definito 'nome'?    ", defined $hash{ nome }    ? "OK" : "Not OK";
+say "É definito 'altezza'? ", defined $hash{ altezza } ? "OK" : "Not OK";
 
 # defined() restituisce un valore vero se il valore
-# corrispondente a quella chiave e` definito
+# corrispondente a quella chiave è definito
 ---- perl, i2
 use strict;
 use warnings;
@@ -193,7 +193,7 @@ delete $hash{ nome };
 
 say "Esiste 'nome'?         ", exists $hash{ nome }     ? "OK" : "Not OK";
 say "Esiste 'altezza'?      ", exists $hash{ altezza }  ? "OK" : "Not OK";
-say "E` definito 'nome'?    ", defined $hash{ nome }    ? "OK" : "Not OK";
-say "E` definito 'altezza'? ", defined $hash{ altezza } ? "OK" : "Not OK";
+say "É definito 'nome'?    ", defined $hash{ nome }    ? "OK" : "Not OK";
+say "É definito 'altezza'? ", defined $hash{ altezza } ? "OK" : "Not OK";
 ---- center
 ...back...

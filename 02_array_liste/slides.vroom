@@ -40,7 +40,7 @@ use feature 'say';
 
 my @array = ('foo', 'bar', 'baz');
 
-# Notate che, benche` la variabile si chiami @array,
+# Notate che, benchè la variabile si chiami @array,
 # usiamo il sigil '$' davanti al suo nome quando
 # ci riferiamo ad un singolo elemento.
 say $array[0];
@@ -72,7 +72,7 @@ use feature 'say';
 
 my @array = ('foo', 'bar', 'baz');
 
-# $#array e` l'ultimo indice valido
+# $#array è l'ultimo indice valido
 # per @array
 
 say $array[$#array];
@@ -90,7 +90,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# Si puo` modificare il separatore se volete
+# Si può modificare il separatore se volete
 
 $" = ', ';
 my @array = ('foo', 'bar', 'baz');
@@ -143,7 +143,7 @@ my ($a, $b) = (1 .. 10); # 8 valori vengono "buttati via"
 use strict;
 use warnings;
 
-# Si puo` usare un array in ogni posto
+# Si può usare un array in ogni posto
 # in cui potreste usare una lista
 
 my @numeri = (1 .. 10);
@@ -155,7 +155,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# Un errore tipico di chi e` troppo ottimista
+# Un errore tipico di chi è troppo ottimista
 # e non ha letto la documentazione.
 # Cosa pensate che stampi questo pezzo di codice?
 
@@ -166,7 +166,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# E` esattamente equivalente a questo
+# É esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -175,7 +175,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# E` esattamente equivalente a questo
+# É esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -187,7 +187,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# E` esattamente equivalente a questo
+# É esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -266,6 +266,6 @@ my @array = (1, 10, 6, 4, 3, 7, 5, 8, 3, 9);
 my @array_ordinato = sort {$a <=> $b} @array;
 say "@array_ordinato";
 
-# Torneremo piu` avanti sull'uso di sort()
+# Torneremo più avanti sull'uso di sort()
 ---- center
 ...back...

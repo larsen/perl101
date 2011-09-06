@@ -12,13 +12,13 @@ use strict;
 use warnings;
 use feature 'say';
 
-# E` esattamente equivalente a questo
+# É esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
 
 # Come si fa allora un array di array?
-# Lo vediamo piu` tardi...
+# Lo vediamo più tardi...
 ---- perl, i10
 use strict;
 use warnings;
@@ -64,7 +64,7 @@ my @persone = (
     ( nome => "Mario",   cognome => "Rossi" )
 );
 
-# Non si puo`!
+# Non si può!
 ---- perl, i10
 use strict;
 use warnings;
@@ -101,14 +101,14 @@ my @persone = (
 
 say $persone[0]->{ nome };
 ---- center
-Questa e` la prima e fondamentale 
+Questa è la prima e fondamentale 
 tecnica per manipolare strutture
 dati in Perl
 ---- center
 Negli esempi presentati abbiamo usato
 riferimenti ad array e hash _anonimi_
 ---- center
-A volte pero` e` utile costruire 
+A volte però è utile costruire 
 riferimenti a variabili che un nome
 lo hanno...
 ---- perl, i10
@@ -145,7 +145,7 @@ push @famiglia, \%padre;
 push @famiglia, \%figlio;
 
 # Una variante, tanto per ripassare le tecniche 
-# gia` viste precedentemente
+# già viste precedentemente
 ---- perl, i10
 use strict;
 use warnings;
@@ -174,7 +174,7 @@ push @famiglia, \%figlio;
 say Dumper( \@famiglia );
 
 # Usare Dumper() con i riferimenti migliora la 
-# leggibilita` dell'output
+# leggibilità dell'output
 ---- perl, i10
 use strict;
 use warnings;

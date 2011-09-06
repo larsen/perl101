@@ -58,7 +58,7 @@ use strict;
 use warnings;
 
 # Le operazioni aritmetiche sono le solite. 
-# Vediamo invece gli operatori piu` particolari
+# Vediamo invece gli operatori più particolari
 
 $a % $b; # Resto
 $a ** $b; # Esponente
@@ -107,7 +107,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# Ma e` scomodo
+# Ma è scomodo
 
 my $str = "L'amo alla follia";
 say $str;
@@ -123,7 +123,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# C'e` piu` di un modo per 
+# C'è più di un modo per 
 # delimitare le stringhe
 
 my $str = q{L'amo alla follia ma lei ha detto "Non se ne parla"};
@@ -149,7 +149,7 @@ use feature 'say';
 # q{}  -> quote
 # qq{} -> double-quote
 
-my $nome = 'Angela';
+my $nome = 'Maria';
 my $str = qq{L'amo alla follia ma $nome ha detto "Non se ne parla"};
 say $str;
 ---- perl, i10
@@ -160,7 +160,7 @@ use feature 'say';
 # Un po' di operatori utili per le stringhe
 # Concatenazione
 
-my $nome = 'Angela';
+my $nome = 'Maria';
 my $cognome = 'Rossi';
 my $nome_completo = $nome . " " . $cognome;
 say $nome_completo;

@@ -122,17 +122,17 @@ use Regexp::Grammars;
 my $text = "bar 1oo baz";
 say "OK!" if $text =~ /<debug: match> \doo/x;
 ---- perl, i10
-# \w  Un carattere alfanumerico (piu` '_')
+# \w  Un carattere alfanumerico (più '_')
 # \W  Un carattere NON alfanumerico
 # \d  Una cifra
 # \D  Un carattere che NON rappresenta una cifra
 # \s  Uno spazio
-# \S  Un carattere che NON e` uno spazio
+# \S  Un carattere che NON è uno spazio
 ---- center
 Quantificatori
 ---- perl, i10
-# *      Il carattere precedente, 0 o piu` volte
-# +      Il carattere precedente, 1 o piu` volte
+# *      Il carattere precedente, 0 o più volte
+# +      Il carattere precedente, 1 o più volte
 # ?      Il carattere precedente, 0 o 1 volta
 # {n,m}  Il carattere precedente, da n a m volte
 ---- perl, i10
@@ -172,7 +172,7 @@ if ($text =~ /(\w)oo/x) {
     print $1;
 }
 
-# Il valore "catturato" e` contenuto
+# Il valore "catturato" è contenuto
 # in $1, e successive
 ---- perl, i10
 use strict;
@@ -184,7 +184,7 @@ if ($text =~ /(?<initial>\w)oo/x) {
 }
 
 # Dalla versione 5.10, esistono
-# anche i named capture
+# anche i "named capture"
 ---- center
 Caratteri speciali
 ---- perl, i10
@@ -257,7 +257,7 @@ CSV -> Text::CSV_XS
 ---- center
 URL -> URI
 ---- center
-XML -> XML::Simple, XML::Twig, XML::XPath
+XML -> XML::LibXML, XML::Simple, XML::Twig, XML::XPath
 ---- center
 HTML -> HTML::TokeParser::Simple
 ---- perl, i10
