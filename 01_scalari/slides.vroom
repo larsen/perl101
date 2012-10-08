@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - Valori e variabili Scalari
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber
@@ -18,7 +18,7 @@ use strict;
 use warnings;
 
 # Non dovete preoccuparvi del trattamento
-# in intero o in virgola mobile
+# dei numeri interi o in virgola mobile
 my $numero = 10;
 my $numero_decimale = 3.14;
 ---- perl, i10
@@ -136,7 +136,7 @@ use feature 'say';
 # Le doppie virgolette servono anche per 
 # la cosidetta "interpolazione"
 
-my $nome = 'Angela';
+my $nome = 'Carla';
 my $str = "L'amo alla follia ma $nome ha detto \"Non se ne parla\"";
 say $str;
 ---- perl, i10
@@ -208,7 +208,7 @@ use feature 'say';
 
 # Funzioni utili per le stringhe
 
-my $name = 'stefano';
+my $name = 'pippo';
 say ucfirst $name;
 ---- center
 ...back...

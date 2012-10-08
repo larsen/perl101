@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - Liste e array
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber
@@ -166,7 +166,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# É esattamente equivalente a questo
+# È esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -175,7 +175,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# É esattamente equivalente a questo
+# È esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -187,7 +187,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# É esattamente equivalente a questo
+# È esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -251,6 +251,17 @@ use warnings;
 use feature 'say';
 
 # Altre funzioni utili
+my @array = qw/ pippo pluto paperino /;
+
+my @array_ordinato = sort @array;
+say "@array_ordinato";
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+# Altre funzioni utili
+# Ordinamento numerico 
 my @array = (1, 10, 6, 4, 3, 7, 5, 8, 3, 9);
 
 my @array_ordinato = sort {$a <=> $b} @array;

@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - OOP
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber
@@ -30,7 +30,7 @@ sub nome {
 
 package main;
 my $guy = Persona->new;
-$guy->nome( "Stefano" );
+$guy->nome( "Marco" );
 print $guy->nome;
 ---- perl, i10
 package Persona;
@@ -42,7 +42,7 @@ has 'nome' => (
 
 package main;
 my $guy = Persona->new;
-$guy->nome( "Stefano" );
+$guy->nome( "Luca" );
 print $guy->nome;
 ---- perl, i10
 package Persona;
@@ -55,7 +55,7 @@ has 'nome' => (
 
 package main;
 my $guy = Persona->new;
-$guy->nome( "Stefano" );
+$guy->nome( "Luca" );
 print $guy->nome;
 ---- perl, i10
 package Persona;
@@ -67,7 +67,7 @@ has 'nome' => (
 );
 
 package main;
-my $guy = Persona->new( nome => 'Stefano' );
+my $guy = Persona->new( nome => 'Luca' );
 print $guy->nome;
 ---- perl, i10
 package Persona;
@@ -88,7 +88,7 @@ has 'title' => (
 );
 
 package main;
-my $guy = Impiegato->new( nome => 'Stefano' );
+my $guy = Impiegato->new( nome => 'Luca' );
 print $guy->nome;
 ---- perl, i10
 package Persona;
@@ -114,7 +114,7 @@ override 'nome' => sub {
 };
 
 package main;
-my $guy = Impiegato->new( nome => 'Stefano' );
+my $guy = Impiegato->new( nome => 'Luca' );
 print $guy->nome;
 ---- perl, i10
 use feature 'say';
@@ -163,7 +163,7 @@ has 'impiegati' => (
 
 package main;
 my $guy = Impiegato->new( 
-    nome   => 'Stefano',
+    nome   => 'Luca',
     titolo => 'Impiegato'
 );
 my $director = Impiegato->new( 

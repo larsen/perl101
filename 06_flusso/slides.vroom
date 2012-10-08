@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - Controllo del flusso 
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber

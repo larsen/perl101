@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - Espressioni Regolari
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber

@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - I/O
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber
@@ -10,7 +10,6 @@ gvimrc: |
 ---- perl, i10
 use strict;
 use warnings;
-use feature 'say';
 
 my $filename = "esempio1.txt";
 open my $fh, "<", $filename;
@@ -21,7 +20,6 @@ close $fh;
 ---- perl, i10
 use strict;
 use warnings;
-use feature 'say';
 
 my $filename = "esempio1.txt";
 open my $fh, "<", $filename;
@@ -55,7 +53,7 @@ while ( my $line = <$fh> ) {
 }
 close $fh;
 
-# É buona norma controllare gli errori
+# È buona norma controllare gli errori
 ---- perl, i10
 use strict;
 use warnings;

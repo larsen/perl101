@@ -2,7 +2,7 @@
 title: Corso Introduttivo a Perl - Hash
 height: 24
 width: 80
-vim: gvim
+vim: vim
 gvimrc: |
   set guioptions-=egmLtT
   set nonumber
@@ -12,7 +12,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-# É esattamente equivalente a questo
+# È esattamente equivalente a questo
 
 my @array = (1, 2, 3, 4, 5, 6);
 say $array[1];
@@ -60,7 +60,7 @@ use feature 'say';
 # Per gli hash abbiamo lo stesso problema
 
 my @persone = (
-    ( nome => "Stefano", cognome => "Rodighiero" ),
+    ( nome => "Pinco", cognome => "Pallino" ),
     ( nome => "Mario",   cognome => "Rossi" )
 );
 
@@ -71,7 +71,7 @@ use warnings;
 use feature 'say';
 
 my @persone = (
-    { nome => "Stefano", cognome => "Rodighiero" },
+    { nome => "Pinco", cognome => "Rodighiero" },
     { nome => "Mario",   cognome => "Rossi" }
 );
 
@@ -83,7 +83,7 @@ use feature 'say';
 use Data::Dumper;
 
 my @persone = (
-    { nome => "Stefano", cognome => "Rodighiero" },
+    { nome => "Pinco", cognome => "Rodighiero" },
     { nome => "Mario",   cognome => "Rossi" }
 );
 
@@ -95,7 +95,7 @@ use feature 'say';
 use Data::Dumper;
 
 my @persone = (
-    { nome => "Stefano", cognome => "Rodighiero" },
+    { nome => "Pinco", cognome => "Rodighiero" },
     { nome => "Mario",   cognome => "Rossi" }
 );
 
@@ -118,7 +118,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my @famiglia = ...
 ---- perl, i10
@@ -128,7 +128,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my @famiglia = \%padre, \%figlio;
 ---- perl, i10
@@ -138,7 +138,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my @famiglia;
 push @famiglia, \%padre;
@@ -153,7 +153,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my @famiglia;
 push @famiglia, \%padre;
@@ -166,7 +166,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my @famiglia;
 push @famiglia, \%padre;
@@ -182,7 +182,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my %famiglia = (
     padre  => ... ,
@@ -195,7 +195,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my %famiglia = (
     padre  => \%padre,
@@ -210,7 +210,7 @@ use feature 'say';
 use Data::Dumper;
 
 my %padre  = ( nome => "Lorenzo", cognome => "Rodighiero" );
-my %figlio = ( nome => "Stefano", cognome => "Rodighiero" );
+my %figlio = ( nome => "Pinco", cognome => "Rodighiero" );
 
 my %famiglia = (
     padre  => \%padre,
