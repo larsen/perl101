@@ -70,23 +70,6 @@ close $fh;
 # $! è una variabile speciale che contiene
 # dettagli sull'ultimo errore occorso
 ---- center
-Aperture speciali
----- perl, i10
-use strict;
-use warnings;
-use feature 'say';
-
-my $filename = "esempio3.txt";
-open my $fh, "+<", $filename
-    or die "Impossibile aprire $filename: $!";
-
-my $totale = 0;
-while ( my $line = <$fh> ) {
-    $totale += $line;
-}
-say $fh $totale;
-close $fh;
----- center
 Scrivere su file
 ---- perl, i10
 use strict;
