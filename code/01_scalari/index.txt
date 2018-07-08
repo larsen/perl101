@@ -1,0 +1,19 @@
+01 print, numero intero
+02 numero intero, numero in virgola mobile
+03 formattare i numeri
+04 numeri in esadecimale ottale e binario, print
+05 numeri in esadecimale ottale e binario, say
+06 operatori aritmetici Resto ed Esponente 
+07 feature say
+08 string su più righe
+09 Escape, caratteri speciali, nelle stringhe
+10 Quoting con \  nelle stringhe
+11 Doppio apice e quoting
+12 q{} singolo apice
+13 Interpolazione nelle stringhe
+14 qq{} doppio apice
+15 L'operatore . (Concatenazione di stringhe)
+16 L'operatore x (Ripetizione)
+17 Operatori di confronto per le stringhe
+18 Operatore somma e conversioni implicite
+19 Funzioni utili per le stringhe: ucfirst 
