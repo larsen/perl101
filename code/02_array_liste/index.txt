@@ -1,0 +1,23 @@
+01 dichiarare e definire un array
+02 Inizializzare un array
+03 Indici, accesso agli elementi di un array
+04 $ 
+05 Out of range array
+06 Indici negativi
+07 Ultimo indice $#
+08 Interpolazione ed array
+09 $" separatore per gli array
+10 Lista
+11 Lista
+12 Lista di stringhe
+13 Assegnamenti tramite liste
+14 Ancora assegnamenti
+15 Erorre classico con array bi-dimensionali
+16 Pop
+17 Shift
+18 Push
+19 Unshift
+20 Reverse
+21 Sort
+22 Ordinamento numerico
+23 Ancora sort    
