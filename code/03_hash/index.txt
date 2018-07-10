@@ -1,0 +1,13 @@
+01 Inizializzazione hash
+02 Accesso agli elementi
+03 Modifica hash, aggiunta coppia chiave valore
+04 Uso di => 
+05 , equivalente uso di =>
+06 Assegnare una lista ad un hash
+07 keys() lista chiavi hash
+08 values() lista valori hash
+09 exists() la chiave esiste?
+10 defined() il valore e' definito?
+11 Esempio exists() defined()
+12 delete() elinare un elemento
+13 Esempio delete() exists() defined() 

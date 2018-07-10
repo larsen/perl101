@@ -1,0 +1,199 @@
+---- config
+title: Corso Introduttivo a Perl - Hash
+height: 24
+width: 80
+vim: vim
+gvimrc: |
+  set guioptions-=egmLtT
+  set nonumber
+  colorscheme borland
+---- center
+Fondamentali!
+---- perl, i10
+use strict;
+use warnings;
+
+# Inizializzazione
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+
+# Accesso agli elementi
+
+say $hash{ nome };
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+
+# Allo stesso modo, si può usare 
+# questa sintassi per modificare 
+# la hash, oppure aggiungere nuove 
+# coppie chiave-valore
+
+$hash{ nome }    = 'Paolo'; # Modifica
+$hash{ altezza } = 160;     # Nuova coppia
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+
+# L'uso di '=>' per definire una hash
+# è cosiddetto "zucchero sintattico",
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    'nome'    , 'Pinco' ,
+    'cognome' , 'Pallino' 
+);
+
+# Ecco una sintassi equivalente
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 'nome', 'Pinco', 'cognome' , 'Pallino' );
+
+# Il fatto che il valore da assegnare ad un
+# hash sia una lista (purchè con un numero 
+# pari di elementi) tornerà comodo...
+---- center
+Funzioni utili per
+la manipolazione
+degli hash
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+
+say keys %hash;
+
+# keys() restituisce la lista delle chiavi in %h, 
+# in un ordine arbitrario
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+
+say values %hash;
+
+# values() restituisce la lista dei valori in %h, 
+# nell'ordine corrispondente a quello fornito
+# da keys()
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' 
+);
+
+say exists $hash{ nome }    ? "OK" : "Not OK";
+say exists $hash{ altezza } ? "OK" : "Not OK";
+
+# exists() restituisce un valore vero se l'hash
+# contiene la chiave specificata
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' ,
+    altezza => undef
+);
+
+say defined $hash{ nome }    ? "OK" : "Not OK";
+say defined $hash{ altezza } ? "OK" : "Not OK";
+
+# defined() restituisce un valore vero se il valore
+# corrispondente a quella chiave è definito
+---- perl, i2
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' ,
+    altezza => undef
+);
+
+say "Esiste 'nome'?         ", exists $hash{ nome }     ? "OK" : "Not OK";
+say "Esiste 'altezza'?      ", exists $hash{ altezza }  ? "OK" : "Not OK";
+say "È definito 'nome'?    ", defined $hash{ nome }    ? "OK" : "Not OK";
+say "È definito 'altezza'? ", defined $hash{ altezza } ? "OK" : "Not OK";
+
+# defined() restituisce un valore vero se il valore
+# corrispondente a quella chiave è definito
+---- perl, i2
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' ,
+    altezza => undef
+);
+
+delete $hash{ nome };
+
+# delete() elimina un elemento da un hash
+---- perl, i2
+use strict;
+use warnings;
+use feature 'say';
+
+my %hash = ( 
+    nome    => 'Pinco' ,
+    cognome => 'Pallino' ,
+    altezza => undef
+);
+
+delete $hash{ nome };
+
+say "Esiste 'nome'?         ", exists $hash{ nome }     ? "OK" : "Not OK";
+say "Esiste 'altezza'?      ", exists $hash{ altezza }  ? "OK" : "Not OK";
+say "È definito 'nome'?    ", defined $hash{ nome }    ? "OK" : "Not OK";
+say "È definito 'altezza'? ", defined $hash{ altezza } ? "OK" : "Not OK";
+---- center
+...back...
