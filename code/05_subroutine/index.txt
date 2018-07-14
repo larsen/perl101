@@ -1,0 +1,9 @@
+01 Keyword sub, definire una subroutine
+02 Richiamare una subroutine 
+03 Come passare parametri alla subroutine?
+04 Accedere alla lista di parametri in ingresso all sub: array @_
+05 Modificare i valori in ingesso alla subroutine dentro alla sub modificata i dati anche nell'ambiente chiamante (passaggio per rifermento)  
+06 Non tutte le variabili possono essere modificate dentro la sub, dipende dai casi
+07 Spacchettamento dei parametri (variabili locali alla sub) ci permette di modificare anche variabili read-only e non modificare l'ambiente del chiamante
+08 Spacchettamento dei parametri: @_ uso implicito con shift in una subroutine 
+09 Ritornare valori al chiamante, passaggio di più parametri alla sub ed uso di shift

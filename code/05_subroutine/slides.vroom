@@ -1,0 +1,126 @@
+---- config
+title: Corso Introduttivo a Perl - Subroutine
+height: 24
+width: 80
+vim: vim
+gvimrc: |
+  set guioptions-=egmLtT
+  set nonumber
+  colorscheme borland
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub saluta {
+    say "Ciao!";
+}
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub saluta {
+    say "Ciao!";
+}
+
+saluta();
+
+# Invocazione di subroutine
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub saluta {
+    ...
+}
+
+saluta( "Stefano" );
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub saluta {
+    say "Ciao, $_[0]";
+}
+
+saluta( "Stefano" );
+---- center
+ATTENZIONE!
+In @_ ci sono _alias_ dei parametri
+forniti alla subroutine
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub foo {
+    $_[0] = 10;
+}
+
+$a = 15;
+say $a;
+foo( $a );
+say $a;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub foo {
+    $_[0] = 10;
+}
+
+foo( 5 );
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub saluta {
+    my $name = $_[0];
+    say "Ciao, $name";
+}
+
+saluta( "Stefano" );
+
+# Idioma tipico
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub saluta {
+    my $name = shift;
+    say "Ciao, $name";
+}
+
+saluta( "Stefano" );
+
+# Alternativa
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub moltiplica {
+    ...
+}
+
+my $risultato = moltiplica( 3, 2 );
+say $risultato;
+---- perl, i10
+use strict;
+use warnings;
+use feature 'say';
+
+sub moltiplica {
+    my $factor1 = shift;
+    my $factor2 = shift;
+    return $factor1 * $factor2;
+}
+
+my $risultato = moltiplica( 3, 2 );
+say $risultato;
