@@ -1,0 +1,17 @@
+01 array monodimensionale
+02 array bidimensionale
+03 Interpolazione con array bidimensionale
+04 Dumper, print elementi array bidimensionale 
+05 Accesso elementi array di array: Operatori -> (dereferenziare) e [] 
+06 Array di hash? Come fare?
+07 Graffe, riferimento ad hash { }
+08 Dumper, array di hash
+09 Accesso elementi array di hash: Operatori -> (dereferenziare) e {}
+10 Come inserire in un array dei riferimenti a variabili precedentemente create?
+11 Ottenere i riferimenti a variabili: Operatore \
+12 Push riferimenti in un array
+13 Esempi Dumper con array
+14 Stampare un riferimento con Dumper: pretty print!
+15 Hash di hash?
+16 Dumper hash di hash
+17 Accessso elementi hash di hash: 
