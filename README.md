@@ -109,6 +109,10 @@
     * [11](https://youtu.be/rNz_4rMmYxw?t=755) Esempio exists() defined() [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/11.pl)
     * [12](https://youtu.be/rNz_4rMmYxw?t=1188) delete() elinare un elemento [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/12.pl)
     * [13](https://youtu.be/rNz_4rMmYxw?t=1279) Esempio delete() exists() defined() [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/13.pl)
+  * Riferimenti
+  * Esercizi
+    * [01]() array monodimensionale [.pl](https://github.com/larsen/perl101/blob/master/code/04_riferimenti/01.pl)
+    * [02](https://youtu.be/rNz_4rMmYxw?t=1401) [02](https://youtu.be/rNz_4rMmYxw?t=1734) array bidimensionale [.pl](https://github.com/larsen/perl101/blob/master/code/04_riferimenti/02.pl)
 * [Parte sei](https://www.youtube.com/watch?v=j_Df5hhDkbE)
 * [Parte sette](https://www.youtube.com/watch?v=HZjNTlr2wnU)
 * [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
