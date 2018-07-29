@@ -12,7 +12,9 @@
 
 ## Indice dettaglito :video_camera: 
 
-* [Parte uno](https://www.youtube.com/watch?v=FuBMYa6T8yQ){:target="_blank"}
+:warning: Per restare su questa pagina ed aprire il link in una nuova scheda: premi CTRL e clicca su link di tuo interesse.
+
+* [Parte uno](https://www.youtube.com/watch?v=FuBMYa6T8yQ)
   * [Introduzione al Perl](https://youtu.be/FuBMYa6T8yQ?t=252) 
   * [Procurarsi Perl](https://youtu.be/FuBMYa6T8yQ?t=543) 
   * [Come cercare aiuto](https://youtu.be/FuBMYa6T8yQ?t=605) 
