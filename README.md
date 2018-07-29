@@ -94,6 +94,21 @@
      * [22](https://youtu.be/AFNMgNScIDw?t=1379) Ordinamento numerico [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/22.pl)
      
 * [Parte cinque](https://www.youtube.com/watch?v=rNz_4rMmYxw)
+  * Hash
+  * Esercizi
+    * [01](https://youtu.be/rNz_4rMmYxw?t=24) Inizializzazione hash [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/01.pl)
+    * [02](https://youtu.be/rNz_4rMmYxw?t=72) Accesso agli elementi [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/02.pl)
+    * [03](https://youtu.be/rNz_4rMmYxw?t=141) Modifica hash, aggiunta coppia chiave valore [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/03.pl)
+    * [04](https://youtu.be/rNz_4rMmYxw?t=223) Uso di => [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/04.pl)
+    * [05](https://youtu.be/rNz_4rMmYxw?t=270) , equivalente uso di => [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/05.pl)
+    * [06](https://youtu.be/rNz_4rMmYxw?t=310) Assegnare una lista ad un hash [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/06.pl)
+    * [07](https://youtu.be/rNz_4rMmYxw?t=416) keys() lista chiavi hash [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/07.pl)
+    * [08](https://youtu.be/rNz_4rMmYxw?t=461) values() lista valori hash [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/08.pl)
+    * [09](https://youtu.be/rNz_4rMmYxw?t=596) exists() la chiave esiste? [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/09.pl)
+    * [10](https://youtu.be/rNz_4rMmYxw?t=665) defined() il valore e' definito? [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/10.pl)
+    * [11](https://youtu.be/rNz_4rMmYxw?t=755) Esempio exists() defined() [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/11.pl)
+    * [12](https://youtu.be/rNz_4rMmYxw?t=1188) delete() elinare un elemento [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/12.pl)
+    * [13](https://youtu.be/rNz_4rMmYxw?t=1279) Esempio delete() exists() defined() [.pl](https://github.com/larsen/perl101/blob/master/code/03_hash/13.pl)
 * [Parte sei](https://www.youtube.com/watch?v=j_Df5hhDkbE)
 * [Parte sette](https://www.youtube.com/watch?v=HZjNTlr2wnU)
 * [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
