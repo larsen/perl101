@@ -82,6 +82,17 @@
      * [13](https://youtu.be/_KwIAHpLH14?t=1733) Assegnamenti tramite liste  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/13.pl)
 
 * [Parte quattro](https://www.youtube.com/watch?v=AFNMgNScIDw&t=1527s)
+  * Esercizi
+     * [14](https://youtu.be/AFNMgNScIDw?t=127) Ancora assegnamenti  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/14.pl)
+     * [15](https://youtu.be/AFNMgNScIDw?t=206) Erorre classico con array bi-dimensionali  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/15.pl)
+     * [16](https://youtu.be/AFNMgNScIDw?t=484) Pop  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/16.pl)
+     * [17](https://youtu.be/AFNMgNScIDw?t=557) Shift  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/17.pl)
+     * [18](https://youtu.be/AFNMgNScIDw?t=581) Push  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/18.pl)
+     * [19](https://youtu.be/AFNMgNScIDw?t=682) Unshift  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/19.pl)
+     * [20](https://youtu.be/AFNMgNScIDw?t=795) Reverse  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/20.pl)
+     * [21](https://youtu.be/AFNMgNScIDw?t=1358) Sort  [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/21.pl)
+     * [22](https://youtu.be/AFNMgNScIDw?t=1379) Ordinamento numerico [.pl](https://github.com/larsen/perl101/blob/master/code/02_array_liste/22.pl)
+     
 * [Parte cinque](https://www.youtube.com/watch?v=rNz_4rMmYxw)
 * [Parte sei](https://www.youtube.com/watch?v=j_Df5hhDkbE)
 * [Parte sette](https://www.youtube.com/watch?v=HZjNTlr2wnU)
