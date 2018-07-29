@@ -10,7 +10,7 @@
 * Regexp
 * Moduli
 
-## Indice dettaglito :video_camera: 
+## Indice dettagliato :video_camera: 
 
 :warning: Per restare su questa pagina ed aprire il link in una nuova scheda: premi CTRL e clicca su link di tuo interesse.
 
