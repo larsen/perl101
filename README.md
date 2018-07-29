@@ -10,7 +10,7 @@
 * Regexp
 * Moduli
 
-## Indice dettaglito: video e codice
+## Indice dettaglito :video_camera: 
 
 * [Parte uno](https://www.youtube.com/watch?v=FuBMYa6T8yQ) 
   * [Introduzione al Perl](https://youtu.be/FuBMYa6T8yQ?t=252) 
@@ -59,8 +59,9 @@
     * [16](https://youtu.be/7YboH_QdsnU?t=1462) L'operatore x (Ripetizione)  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/16.pl)
     * [17](https://youtu.be/7YboH_QdsnU?t=1617) Operatori di confronto per le stringhe  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/17.pl)
     * [18](https://youtu.be/7YboH_QdsnU?t=1696) Operatore somma e conversioni implicite  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/18.pl)
-    * [19](https://youtu.be/_KwIAHpLH14?t=212) Funzioni utili per le stringhe: ucfirst  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/19.pl)
 * [Parte tre](https://www.youtube.com/watch?v=_KwIAHpLH14&t=320s)
+  * Esercizi
+     * [19](https://youtu.be/_KwIAHpLH14?t=212) Funzioni utili per le stringhe: ucfirst  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/19.pl)
 * [Parte quattro](https://www.youtube.com/watch?v=AFNMgNScIDw&t=1527s)
 * [Parte cinque](https://www.youtube.com/watch?v=rNz_4rMmYxw)
 * [Parte sei](https://www.youtube.com/watch?v=j_Df5hhDkbE)
