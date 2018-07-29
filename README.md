@@ -35,14 +35,17 @@
     * perl op: doc su operatori
   * Esercizi
     * [pragma](https://youtu.be/FuBMYa6T8yQ?t=1451)
-       > # pragma
        > use strict;
+       >
        > use warnings;
+       >
     * [01](https://youtu.be/FuBMYa6T8yQ?t=1505) print, numero intero  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/01.pl)
     * [02](https://youtu.be/FuBMYa6T8yQ?t=1631) numero intero, numero in virgola mobile  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/02.pl)
     * [03](https://youtu.be/FuBMYa6T8yQ?t=1667) formattare i numeri  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/03.pl)
     * [04](https://youtu.be/FuBMYa6T8yQ?t=1684) numeri in esadecimale ottale e binario, print  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/04.pl)
     * [05]((https://youtu.be/FuBMYa6T8yQ?t=1716)) numeri in esadecimale ottale e binario, say  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/05.pl)
+* [Parte due](https://www.youtube.com/watch?v=7YboH_QdsnU)
+  * Esercizi 
     * [06](https://youtu.be/7YboH_QdsnU?t=145) operatori aritmetici Resto ed Esponente  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/06.pl)
     * [07](https://youtu.be/7YboH_QdsnU?t=217) feature say  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/07.pl)
     * [08](https://youtu.be/7YboH_QdsnU?t=337) string su più righe  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/08.pl)
@@ -57,9 +60,6 @@
     * [17](https://youtu.be/7YboH_QdsnU?t=1617) Operatori di confronto per le stringhe  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/17.pl)
     * [18](https://youtu.be/7YboH_QdsnU?t=1696) Operatore somma e conversioni implicite  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/18.pl)
     * [19](https://youtu.be/_KwIAHpLH14?t=212) Funzioni utili per le stringhe: ucfirst  [.pl](https://github.com/larsen/perl101/blob/master/code/01_scalari/19.pl)
-
-
-* [Parte due](https://www.youtube.com/watch?v=7YboH_QdsnU)
 * [Parte tre](https://www.youtube.com/watch?v=_KwIAHpLH14&t=320s)
 * [Parte quattro](https://www.youtube.com/watch?v=AFNMgNScIDw&t=1527s)
 * [Parte cinque](https://www.youtube.com/watch?v=rNz_4rMmYxw)
