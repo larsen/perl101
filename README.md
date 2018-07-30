@@ -140,7 +140,7 @@
     * [04](https://youtu.be/j_Df5hhDkbE?t=1623) Accedere alla lista di parametri in ingresso all sub: array @_ [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/04.pl)
 
 * [Parte sette](https://www.youtube.com/watch?v=HZjNTlr2wnU)
-   * Eserizi
+   * Esercizi
      * [05](https://youtu.be/HZjNTlr2wnU?t=4) [05](https://youtu.be/HZjNTlr2wnU?t=62) Modificare i valori in ingesso alla subroutine dentro alla sub modificata i dati anche nell'ambiente chiamante (passaggio per rifermento)  [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/05.pl) 
      * [06](https://youtu.be/HZjNTlr2wnU?t=8) [06](https://youtu.be/HZjNTlr2wnU?t=163) Non tutte le variabili possono essere modificate dentro la sub, dipende dai casi [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/06.pl)
      * [07](https://youtu.be/HZjNTlr2wnU?t=253) Spacchettamento dei parametri (variabili locali alla sub) ci permette di modificare anche variabili read-only e non modificare l'ambiente del chiamante [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/07.pl)
