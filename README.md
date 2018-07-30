@@ -132,7 +132,13 @@
     * [17](https://youtu.be/j_Df5hhDkbE?t=1136) Accessso elementi hash di hash: [.pl](https://github.com/larsen/perl101/blob/master/code/04_riferimenti/17.pl)
   
   * [Subroutine](https://youtu.be/j_Df5hhDkbE?t=1310)
-  
+  * [Documentazione](https://youtu.be/j_Df5hhDkbE?t=1377) perl sub
+  * Esercizi
+    * [01](https://youtu.be/j_Df5hhDkbE?t=1397) Keyword sub, definire una subroutine [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/01.pl)
+    * [02](https://youtu.be/j_Df5hhDkbE?t=1441) Richiamare una subroutine [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/02.pl)
+    * [03](https://youtu.be/j_Df5hhDkbE?t=1598) Come passare parametri alla subroutine? [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/03.pl)
+    * [04](https://youtu.be/j_Df5hhDkbE?t=1623) Accedere alla lista di parametri in ingresso all sub: array @_ [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/04.pl)
+
 * [Parte sette](https://www.youtube.com/watch?v=HZjNTlr2wnU)
 * [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
