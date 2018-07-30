@@ -130,6 +130,9 @@
     * [15](https://youtu.be/j_Df5hhDkbE?t=1009) Hash di hash? [.pl](https://github.com/larsen/perl101/blob/master/code/04_riferimenti/15.pl)
     * [16](https://youtu.be/j_Df5hhDkbE?t=1067) Dumper hash di hash [.pl](https://github.com/larsen/perl101/blob/master/code/04_riferimenti/16.pl)
     * [17](https://youtu.be/j_Df5hhDkbE?t=1136) Accessso elementi hash di hash: [.pl](https://github.com/larsen/perl101/blob/master/code/04_riferimenti/17.pl)
+  
+  * [Subroutine](https://youtu.be/j_Df5hhDkbE?t=1310)
+  
 * [Parte sette](https://www.youtube.com/watch?v=HZjNTlr2wnU)
 * [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
