@@ -160,11 +160,12 @@
        * 02 if || [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/02.pl)
        
    * [given ... when](https://youtu.be/HZjNTlr2wnU?t=1715)
+          
+* [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
    * [say switch](https://youtu.be/a-S2UdLSFek?t=99)
    * Esercizi given ... when
        * [06](https://youtu.be/a-S2UdLSFek?t=129) given ... when + [concetto di topic $_](https://youtu.be/a-S2UdLSFek?t=169) [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/06.pl) 
-          
-* [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
+
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
 * [Parte dieci](https://www.youtube.com/watch?v=yYfmODxb6hM)
 * [Parte undici](https://www.youtube.com/watch?v=4HTYi4brUgU)
