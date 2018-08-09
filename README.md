@@ -185,8 +185,8 @@
        * [12](https://youtu.be/a-S2UdLSFek?t=1564) while [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/12.pl)
     * [map / grep](https://youtu.be/a-S2UdLSFek?t=1586)
     * Esercizi
-       * [13](https://youtu.be/a-S2UdLSFek?t=1632) map [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/12.pl)
-    
+       * [13](https://youtu.be/a-S2UdLSFek?t=1632) map [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/13.pl)
+       * [14](https://youtu.be/a-S2UdLSFek?t=1783) grep [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/14.pl)
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
 * [Parte dieci](https://www.youtube.com/watch?v=yYfmODxb6hM)
 * [Parte undici](https://www.youtube.com/watch?v=4HTYi4brUgU)
