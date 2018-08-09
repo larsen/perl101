@@ -168,6 +168,7 @@
        * [06](https://youtu.be/a-S2UdLSFek?t=275) continue in given when [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/06.pl)
    * [Smart match operator](https://youtu.be/a-S2UdLSFek?t=319) ~~ 
        * [07](https://youtu.be/a-S2UdLSFek?t=570) default in given when [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/06.pl)
+   * [Modificatori di statement](https://youtu.be/a-S2UdLSFek?t=632)
        
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
 * [Parte dieci](https://www.youtube.com/watch?v=yYfmODxb6hM)
