@@ -178,8 +178,8 @@
    * [while](https://youtu.be/a-S2UdLSFek?t=816)
    * [map / grep](https://youtu.be/a-S2UdLSFek?t=833)
    * Esercizi
-       * [07](https://youtu.be/a-S2UdLSFek?t=848) [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/08.pl)
-       
+       * [08](https://youtu.be/a-S2UdLSFek?t=848) foreach + $_ say it! [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/08.pl)
+       * [09](https://youtu.be/a-S2UdLSFek?t=894) [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/09.pl)
        
        
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
