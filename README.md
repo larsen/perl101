@@ -167,8 +167,20 @@
        * [06](https://youtu.be/a-S2UdLSFek?t=129) given ... when + [concetto di topic $_](https://youtu.be/a-S2UdLSFek?t=169)  + [array anonimo](https://youtu.be/a-S2UdLSFek?t=240) [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/06.pl) 
        * [06](https://youtu.be/a-S2UdLSFek?t=275) continue in given when [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/06.pl)
    * [Smart match operator](https://youtu.be/a-S2UdLSFek?t=319) ~~ 
-       * [07](https://youtu.be/a-S2UdLSFek?t=570) default in given when [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/06.pl)
+       * [07](https://youtu.be/a-S2UdLSFek?t=570) default in given when [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/07.pl)
    * [Modificatori di statement](https://youtu.be/a-S2UdLSFek?t=632)
+   * [for ... foreach](https://youtu.be/a-S2UdLSFek?t=689)
+       * [$_ nei cicli + foreach my $var](https://youtu.be/a-S2UdLSFek?t=727)
+   * [Altre istruzioni per il controllo di flusso](https://youtu.be/a-S2UdLSFek?t=771)
+       * next
+       * redo
+       * last
+   * [while](https://youtu.be/a-S2UdLSFek?t=816)
+   * [map / grep](https://youtu.be/a-S2UdLSFek?t=833)
+   * Esercizi
+       * [07](https://youtu.be/a-S2UdLSFek?t=848) [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/08.pl)
+       
+       
        
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
 * [Parte dieci](https://www.youtube.com/watch?v=yYfmODxb6hM)
