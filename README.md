@@ -146,6 +146,13 @@
      * [07](https://youtu.be/HZjNTlr2wnU?t=253) Spacchettamento dei parametri (variabili locali alla sub) ci permette di modificare anche variabili read-only e non modificare l'ambiente del chiamante [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/07.pl)
      * [08](https://youtu.be/HZjNTlr2wnU?t=346) Spacchettamento dei parametri: @_ uso implicito con shift in una subroutine [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/08.pl)
      * [09](https://youtu.be/HZjNTlr2wnU?t=1341) Ritornare valori al chiamante, passaggio di più parametri alla sub ed uso di shift [.pl](https://github.com/larsen/perl101/blob/master/code/05_subroutine/09.pl)
+    
+   * [Controllo del flusso](https://youtu.be/HZjNTlr2wnU)
+
+     * [Cosa e' falso?](https://youtu.be/HZjNTlr2wnU?t=1627)
+     * [Cosa e' vero?](https://youtu.be/HZjNTlr2wnU)
+     * [if elsif else + diff con altri linguaggi](https://youtu.be/HZjNTlr2wnU?t=1665)
+     * [given ... when](https://youtu.be/HZjNTlr2wnU?t=1715)
 * [Parte otto](https://www.youtube.com/watch?v=a-S2UdLSFek&t=1526s)
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
 * [Parte dieci](https://www.youtube.com/watch?v=yYfmODxb6hM)
