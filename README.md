@@ -183,6 +183,9 @@
        * [10](https://youtu.be/a-S2UdLSFek?t=1055) foreach my $var [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/10.pl)
        * [11](https://youtu.be/a-S2UdLSFek?t=1168) ciclo su array + next + unless + espressione regolare [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/11.pl)
        * [12](https://youtu.be/a-S2UdLSFek?t=1564) while [.pl](https://github.com/larsen/perl101/blob/master/code/06_flusso/12.pl)
+       * [13](https://youtu.be/a-S2UdLSFek?t=1590)
+    * [map / grep](https://youtu.be/a-S2UdLSFek?t=1586)
+    
 * [Parte nove](https://www.youtube.com/watch?v=txONHbwdszY)
 * [Parte dieci](https://www.youtube.com/watch?v=yYfmODxb6hM)
 * [Parte undici](https://www.youtube.com/watch?v=4HTYi4brUgU)
